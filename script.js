@@ -2,8 +2,8 @@
 // Code executed in this function will run when the page is ready
 function pageReady() {
 
-  $.get( "http://www.omdbapi.com/?s=samurai", function( data ) {
-    console.log(data);
+  $.get( "http://www.omdbapi.com/?s=samurai", function( response ) {
+    console.log(response);
   });
 
 
