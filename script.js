@@ -4,7 +4,7 @@ function pageReady() {
 
   // This code makes an HTTP GET REQUEST to the OMDb API
   // the RESPONSE represents the data from OMDb
-  $.get( "http://www.omdbapi.com/?s=" + searchInput, function( response ) {
+  $.get( "http://www.omdbapi.com/?s=samurai", function( response ) {
     console.log(response);
   });
 
@@ -22,5 +22,11 @@ function pageReady() {
 $.get( "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats", function(response) {
 
 });
+
+function showImage(url) {
+  $('.container').empty();
+  var img = $('<img />').attr('src', url);
+  $('.container').append(img);
+}
 
 $(document).ready(pageReady);
